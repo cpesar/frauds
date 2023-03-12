@@ -1,6 +1,6 @@
 import React from 'react'
 
-// export default function ProfileCard(props) {
+// export default function FraudCard(props) {
 //   return (
 //     <div>
 //       <div>Title: {props.title}</div>
@@ -10,7 +10,7 @@ import React from 'react'
 // }
 
 // THE ABOVE WRITTEN USING DESTRUCTURING
-export default function ProfileCard({ title, handle, image }) {
+export default function FraudCard({ title, handle, image, description }) {
   // const title = props.title
   // const handle = props.handle
 
@@ -22,18 +22,22 @@ export default function ProfileCard({ title, handle, image }) {
 
 
   return (
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-1by1">
+    <div className="card">
+      <div className="card-image">
+        <figure className="image is-1by1">
           <img src={image} alt="photos"></img>
         </figure>
       </div>
 
-      <div class="card-content">
-        <div class="media-content">
-          <p class="title is-4">{title}</p>
-          <p class="subtitle is-6">{handle}</p>
+      <div className="card-content">
+        <div className="media-content">
+          <p className="title is-4">{title}</p>
+          <p className="subtitle is-6">{handle}</p>
         </div>
+      </div>
+
+      <div className="content">
+        {description}
       </div>
     </div>
 
