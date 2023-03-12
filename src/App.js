@@ -1,8 +1,8 @@
 import 'bulma/css/bulma.css'
 import FraudCard from "./FraudCard";
-import Alexa from './images/alexa.png'
-import Cortana from './images/cortana.png'
-import Siri from './images/siri.png'
+import Arod from './images/arod.jpg'
+import CrushDavis from './images/chrisdavis.png'
+import Jose from './images/cancesco.jpg'
 
 import React from 'react'
 
@@ -22,7 +22,7 @@ export default function App() {
               <FraudCard
                 title="Alex Rodriguez"
                 handle="@roids420"
-                image={Alexa}
+                image={Arod}
                 description="He's the worst"
               />
             </div>
@@ -30,7 +30,7 @@ export default function App() {
               <FraudCard
                 title="Chris Davis"
                 handle="@cheater69"
-                image={Cortana}
+                image={CrushDavis}
                 description="Right after Bobby Bonilla day, there's Chris Davis day. Maybe he didn't do steroids."
               />
             </div>
@@ -38,7 +38,7 @@ export default function App() {
               <FraudCard
                 title="Jose Cancesco"
                 handle="@bashbro666"
-                image={Siri}
+                image={Jose}
                 description="Rat"
               />
             </div>
